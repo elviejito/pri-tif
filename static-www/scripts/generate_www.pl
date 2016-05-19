@@ -54,6 +54,7 @@ sub generate_homepage {
   my $outfile = "$out_root/index.html";
   say "Generting $outfile";
   $tt->process('index.tt2', $vars, $outfile) || die $tt->error(), "\n";
+  return "<a href='http://www.prineb.org/site/wp-login.php'>Comment on the PRI webpage</a>;
 }
 
 sub county_list {
